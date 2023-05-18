@@ -31,7 +31,6 @@ def uniq(func):
 def cloud_sherlock(name, generate, buckets, rps):
 
     bucketnames_data = read_payload_file(buckets)
-    global BUCKET_URLS, SAAS_URLS
 
     if generate:
         mutations = generate_mutations(name, bucketnames_data)
